@@ -1,45 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <!-- main container -->
+    <div class="wrapper">
+        <aside class="sidebar">
+            <img class="my-photo" src="./img/photo.jpg" alt="my photo">
 
-    <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+            <!-- contacts container -->
+            <div class="contacts-container">
+                <h3 class="contacts-title">Contacts</h3>
 
-      .intro {
-        text-align: center;
-      }
+                <div>
+                    <span class="contacts-link-type">C:</span>
+                    <a class="contacts-link" href="tel:380951138598">+38 093 050 27 67</a>
+                </div>
+                <div>
+                    <span class="contacts-link-type">E:</span> 
+                    <a class="contacts-link" href="mailto:zavadskiyweb@gmail.com">zavadskiyweb@gmail.com</a>
+                </div>
+            </div>
 
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
+            <!-- Tech skills container -->
+            <div class="tech-skills-container">
+                <h3 class="tech-skills-title">Tech Skills</h3>
+                <ul>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">HTML5</span> 
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">CSS3</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">GIT</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">WebPack</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">JavaScript</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">React.js</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">Node.js</span>
+                    </li>
+                </ul>
+            </div>
 
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
+            <!-- Soft skills container -->
+            <div class="tech-skills-container">
+                <h3 class="tech-skills-title">Soft Skills</h3>
+                <ul>
+                    <li class="tech-skills-item"> 
+                        <span class="tech-skills-text">Scrum</span>
+                    </li>
+                    <li class="tech-skills-item"> 
+                        <span class="tech-skills-text">Agile</span>
+                    </li>
+                    <li class="tech-skills-item"> 
+                        <span class="tech-skills-text">Teamwork</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
 
-  <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
+        <!-- about me container -->
+        <div class="about-me-container">
+            <!-- about me main info -->
+            <div class="info-container">
+                <h2 class="profession">Front-End Developer</h2>
+                <h1 class="name">Alexsandr Zavadskiy</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            </div>
 
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
-  </body>
+            <!-- projects container -->
+            <div class="projest-container">
+                <h3 class="about-me-title">Projects</h3>
+                <ol>
+                    <li class="projects-item">
+                        <a 
+                            class="projects-link" 
+                            href="https://mavr1.github.io/Jam/#"
+                        >
+                            https://Jam/
+                        </a>
+                        <span class="dots">.........................</span>
+                        <span><b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b></span>
+                    </li>
+                    <li class="projects-item">
+                      <a 
+                          class="projects-link" 
+                          href="https://inpulsgor.github.io/Radioactive/#"
+                      >
+                          https://Radioactive/
+                      </a>
+                      <span class="dots">.........................</span>
+                      <span><b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b></span>
+                  </li>
+                    <li class="projects-item">
+                        <a class="projects-link" href="https://saletronproject.netlify.app/">https://SalleTron/</a>
+                        <span class="dots">..................................</span>
+                        <span><b>[</b> <span class="tech-name">JavaScript</span> <b>]</b></span>
+                    </li>
+                    <li class="projects-item">
+                        <a class="projects-link" href="https://bc20-react-project.netlify.app/">https://Karbovanets/</a>
+                        <span class="dots">..................................</span>
+                        <span><b>[</b> <span class="tech-name">React.js, Node.js</span> <b>]</b></span>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- work experience -->
+            <div>
+                <h3 class="about-me-title">Work Experience</h3>
+
+                <!-- company 1 -->    
+                <div>
+                    <h4 class="profession-title">Front-End Developer <span class="profession-company">Freelance</span></h4>
+                    <span class="profession-time">
+                        September 2019 - up to now <span class="profession-divider">|</span> Ukraine
+                    </span>
+
+                    <ul class="profession-duties">
+                        <li class="profession-duties-item">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </li>
+                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
+                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                    </ul>
+                </div>
+
+                <!-- company 2 -->    
+                <div>
+                    <h4 class="profession-title">Manager <span class="profession-company">Roga & Kopyta New</span></h4>
+                    <span class="profession-time">
+                        March 2015 - October 2018 <span class="profession-divider">|</span> Ukraine
+                    </span>
+
+                    <ul class="profession-duties">
+                        <li class="profession-duties-item">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </li>
+                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
+                    </ul>
+                </div>
+
+                <!-- company 3 -->    
+                <div>
+                    <h4 class="profession-title">Manager <span class="profession-company">Roga & Kopyta LLC</span></h4>
+                    <span class="profession-time">
+                        June 2014 - February 2015 <span class="profession-divider">|</span> Ukraine
+                    </span>
+
+                    <ul class="profession-duties">
+                        <li class="profession-duties-item">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </li>
+                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="education-container">
+                    <h3 class="about-me-title education-title">Education</h3>
+                    <p class="univ-name">Kharkiv National University of Radioelectronics</p>
+                    <p class="univ-speciality">Management</p>
+                    <span class="profession-time">
+                        Septermber 2009 - June 2014 <span class="profession-divider">|</span> Ukraine
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
